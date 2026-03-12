@@ -11,7 +11,7 @@ export function ModeSelector({ onSelect }: ModeSelectorProps) {
       <h1 className="mt-4 max-w-4xl font-serif text-5xl leading-[0.95] text-zinc-900 md:text-7xl">
         Learn the 1000 most common Spanish words.
       </h1>
-      <p className="mt-7 max-w-2xl text-zinc-700 md:text-lg">
+      <p className="mt-7 max-w-2xl text-lg leading-relaxed text-zinc-700 md:text-xl">
         Choose a calm 24/7 flashcard screensaver or enter structured learning
         mode with progressive rounds and matching tests.
       </p>
