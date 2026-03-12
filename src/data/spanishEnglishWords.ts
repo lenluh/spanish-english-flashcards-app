@@ -4,7 +4,7 @@ export type WordPair = {
   english: string;
 };
 
-// Curated from high-frequency Spanish lemmas (basic word forms) with practical English glosses for everyday use.
+// QA-curated from high-frequency Spanish lemmas and verified against FreeDict Spanish-English dictionary where needed.
 export const spanishEnglishWords: WordPair[] = [
   {
     "id": 1,
@@ -314,7 +314,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 62,
     "spanish": "esperar",
-    "english": "to hope [+direct object or infinitive or que ]"
+    "english": "to hope"
   },
   {
     "id": 63,
@@ -479,7 +479,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 95,
     "spanish": "quién",
-    "english": "who?, whom?"
+    "english": "who"
   },
   {
     "id": 96,
@@ -549,12 +549,12 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 109,
     "spanish": "dónde",
-    "english": "where?"
+    "english": "where"
   },
   {
     "id": 110,
     "spanish": "ni",
-    "english": "neither... nor"
+    "english": "neither nor"
   },
   {
     "id": 111,
@@ -624,7 +624,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 124,
     "spanish": "ahí",
-    "english": "there: used to designate a place near the listener"
+    "english": "there"
   },
   {
     "id": 125,
@@ -914,7 +914,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 182,
     "spanish": "importar",
-    "english": "to matter, to be important [+a ]"
+    "english": "to matter"
   },
   {
     "id": 183,
@@ -1024,7 +1024,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 204,
     "spanish": "policía",
-    "english": "Civility, polity"
+    "english": "police"
   },
   {
     "id": 205,
@@ -1149,7 +1149,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 229,
     "spanish": "mayor",
-    "english": "comparative of grande: bigger"
+    "english": "of age"
   },
   {
     "id": 230,
@@ -1614,7 +1614,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 322,
     "spanish": "ello",
-    "english": "it, neuter third-person subject and disjunctive pronoun"
+    "english": "it"
   },
   {
     "id": 323,
@@ -1749,7 +1749,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 349,
     "spanish": "perro",
-    "english": "dog, domesticated for thousands of years and of highly variable app..."
+    "english": "dog"
   },
   {
     "id": 350,
@@ -2344,7 +2344,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 468,
     "spanish": "cuidar",
-    "english": "to look after, take care of [[[Appendix:Glossary#transitive_verb"
+    "english": "to take care of"
   },
   {
     "id": 469,
@@ -2439,7 +2439,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 487,
     "spanish": "peor",
-    "english": "comparative of malo: worse"
+    "english": "worse"
   },
   {
     "id": 488,
@@ -2759,7 +2759,7 @@ export const spanishEnglishWords: WordPair[] = [
   {
     "id": 551,
     "spanish": "soler",
-    "english": "to be accustomed to doing something, to do something on a regular b..."
+    "english": "to usually do"
   },
   {
     "id": 552,
@@ -2858,2152 +2858,2152 @@ export const spanishEnglishWords: WordPair[] = [
   },
   {
     "id": 571,
-    "spanish": "señorito",
-    "english": "A son of an important or respectable person"
-  },
-  {
-    "id": 572,
     "spanish": "lindo",
     "english": "pretty"
   },
   {
-    "id": 573,
+    "id": 572,
     "spanish": "compañía",
     "english": "company"
   },
   {
-    "id": 574,
-    "spanish": "tranquilar",
-    "english": "to mark with two lines each of the debit and date items of a commer..."
-  },
-  {
-    "id": 575,
+    "id": 573,
     "spanish": "actuar",
     "english": "to act, to behave"
   },
   {
-    "id": 576,
+    "id": 574,
     "spanish": "proceso",
     "english": "process"
   },
   {
-    "id": 577,
+    "id": 575,
     "spanish": "investigación",
     "english": "investigation"
   },
   {
-    "id": 578,
+    "id": 576,
     "spanish": "tonto",
     "english": "stupid"
   },
   {
-    "id": 579,
+    "id": 577,
     "spanish": "café",
     "english": "coffee"
   },
   {
-    "id": 580,
+    "id": 578,
     "spanish": "duda",
     "english": "doubt"
   },
   {
-    "id": 581,
+    "id": 579,
     "spanish": "preferir",
     "english": "to prefer"
   },
   {
-    "id": 582,
+    "id": 580,
     "spanish": "conducir",
     "english": "to drive"
   },
   {
-    "id": 583,
+    "id": 581,
     "spanish": "estado",
     "english": "country, land"
   },
   {
-    "id": 584,
-    "spanish": "mía",
-    "english": "a regiment of 100 soldiers in the Spanish protectorate of Morocco"
-  },
-  {
-    "id": 585,
+    "id": 582,
     "spanish": "ropa",
     "english": "garment, clothing"
   },
   {
-    "id": 586,
+    "id": 583,
     "spanish": "valor",
     "english": "value"
   },
   {
-    "id": 587,
+    "id": 584,
     "spanish": "profesor",
     "english": "professor"
   },
   {
-    "id": 588,
+    "id": 585,
     "spanish": "reunión",
     "english": "meeting, session"
   },
   {
-    "id": 589,
+    "id": 586,
     "spanish": "boca",
     "english": "mouth, oral cavity"
   },
   {
-    "id": 590,
+    "id": 587,
     "spanish": "cámara",
     "english": "room"
   },
   {
-    "id": 591,
+    "id": 588,
     "spanish": "conocido",
     "english": "known"
   },
   {
-    "id": 592,
+    "id": 589,
     "spanish": "espacio",
     "english": "space"
   },
   {
-    "id": 593,
+    "id": 590,
     "spanish": "encima",
     "english": "on top"
   },
   {
-    "id": 594,
+    "id": 591,
     "spanish": "imagen",
     "english": "image"
   },
   {
-    "id": 595,
+    "id": 592,
     "spanish": "abierto",
     "english": "open, unlocked"
   },
   {
-    "id": 596,
+    "id": 593,
     "spanish": "cargo",
     "english": "charge, burden"
   },
   {
-    "id": 597,
+    "id": 594,
     "spanish": "caballero",
     "english": "horseman"
   },
   {
-    "id": 598,
+    "id": 595,
     "spanish": "cantar",
     "english": "to sing"
   },
   {
-    "id": 599,
+    "id": 596,
     "spanish": "posibilidad",
     "english": "possibility"
   },
   {
-    "id": 600,
+    "id": 597,
     "spanish": "detrás",
     "english": "behind, at the rear"
   },
   {
-    "id": 601,
+    "id": 598,
     "spanish": "proteger",
     "english": "to protect, to defend"
   },
   {
-    "id": 602,
+    "id": 599,
     "spanish": "universidad",
     "english": "college"
   },
   {
-    "id": 603,
+    "id": 600,
     "spanish": "sufrir",
     "english": "to suffer"
   },
   {
-    "id": 604,
+    "id": 601,
     "spanish": "golpear",
     "english": "to hit, to knock"
   },
   {
-    "id": 605,
+    "id": 602,
     "spanish": "abandonar",
     "english": "to abandon, to leave"
   },
   {
-    "id": 606,
+    "id": 603,
     "spanish": "consejo",
     "english": "advice, counsel"
   },
   {
-    "id": 607,
+    "id": 604,
     "spanish": "asesino",
     "english": "murderer, killer"
   },
   {
-    "id": 608,
+    "id": 605,
     "spanish": "cuyo",
     "english": "whose"
   },
   {
-    "id": 609,
+    "id": 606,
     "spanish": "vuestro",
     "english": "yours, your"
   },
   {
-    "id": 610,
+    "id": 607,
     "spanish": "caminar",
     "english": "to walk"
   },
   {
-    "id": 611,
+    "id": 608,
     "spanish": "daño",
     "english": "damage"
   },
   {
-    "id": 612,
+    "id": 609,
     "spanish": "sociedad",
     "english": "society, social order"
   },
   {
-    "id": 613,
+    "id": 610,
     "spanish": "base",
     "english": "base"
   },
   {
-    "id": 614,
+    "id": 611,
     "spanish": "proyecto",
     "english": "project, plan"
   },
   {
-    "id": 615,
+    "id": 612,
     "spanish": "anoche",
     "english": "last night"
   },
   {
-    "id": 616,
+    "id": 613,
     "spanish": "mesa",
     "english": "table"
   },
   {
-    "id": 617,
+    "id": 614,
     "spanish": "paciente",
     "english": "patient"
   },
   {
-    "id": 618,
+    "id": 615,
     "spanish": "tercero",
     "english": "third"
   },
   {
-    "id": 619,
+    "id": 616,
     "spanish": "crear",
     "english": "to create"
   },
   {
-    "id": 620,
+    "id": 617,
     "spanish": "dirigir",
     "english": "to direct"
   },
   {
-    "id": 621,
+    "id": 618,
     "spanish": "capaz",
     "english": "able, capable"
   },
   {
-    "id": 622,
+    "id": 619,
     "spanish": "movimiento",
     "english": "movement"
   },
   {
-    "id": 623,
+    "id": 620,
     "spanish": "increíble",
     "english": "incredible, unbelievable"
   },
   {
-    "id": 624,
+    "id": 621,
     "spanish": "divertido",
     "english": "entertaining, amusing"
   },
   {
-    "id": 625,
+    "id": 622,
     "spanish": "principal",
     "english": "main, most important"
   },
   {
-    "id": 626,
+    "id": 623,
     "spanish": "maestro",
     "english": "master"
   },
   {
-    "id": 627,
+    "id": 624,
     "spanish": "recoger",
     "english": "to collect, to gather"
   },
   {
-    "id": 628,
+    "id": 625,
     "spanish": "carrera",
     "english": "race"
   },
   {
-    "id": 629,
+    "id": 626,
     "spanish": "caballo",
     "english": "horse"
   },
   {
-    "id": 630,
+    "id": 627,
     "spanish": "siglo",
     "english": "century"
   },
   {
-    "id": 631,
+    "id": 628,
     "spanish": "perdón",
     "english": "pardon"
   },
   {
-    "id": 632,
+    "id": 629,
     "spanish": "pena",
     "english": "punishment"
   },
   {
-    "id": 633,
+    "id": 630,
     "spanish": "antiguo",
     "english": "old, former"
   },
   {
-    "id": 634,
+    "id": 631,
     "spanish": "ocupar",
     "english": "to occupy"
   },
   {
-    "id": 635,
+    "id": 632,
     "spanish": "asesinar",
     "english": "to murder"
   },
   {
-    "id": 636,
+    "id": 633,
     "spanish": "banco",
     "english": "bank"
   },
   {
-    "id": 637,
+    "id": 634,
     "spanish": "político",
     "english": "political"
   },
   {
-    "id": 638,
+    "id": 635,
     "spanish": "mayoría",
     "english": "majority"
   },
   {
-    "id": 639,
+    "id": 636,
     "spanish": "miembro",
     "english": "member"
   },
   {
-    "id": 640,
+    "id": 637,
     "spanish": "condición",
     "english": "condition"
   },
   {
-    "id": 641,
+    "id": 638,
     "spanish": "efecto",
     "english": "effect"
   },
   {
-    "id": 642,
+    "id": 639,
     "spanish": "económico",
     "english": "economic"
   },
   {
-    "id": 643,
+    "id": 640,
     "spanish": "volar",
     "english": "to fly, to fly away"
   },
   {
-    "id": 644,
+    "id": 641,
     "spanish": "brazo",
     "english": "arm"
   },
   {
-    "id": 645,
+    "id": 642,
     "spanish": "ministro",
     "english": "minister"
   },
   {
-    "id": 646,
+    "id": 643,
     "spanish": "libertad",
     "english": "liberty, freedom"
   },
   {
-    "id": 647,
+    "id": 644,
     "spanish": "asesinato",
     "english": "assassination"
   },
   {
-    "id": 648,
+    "id": 645,
     "spanish": "reunir",
     "english": "to gather, to collect"
   },
   {
-    "id": 649,
+    "id": 646,
     "spanish": "crecer",
     "english": "to grow"
   },
   {
-    "id": 650,
+    "id": 647,
     "spanish": "alcanzar",
     "english": "to reach"
   },
   {
-    "id": 651,
+    "id": 648,
     "spanish": "devolver",
     "english": "to return, refund"
   },
   {
-    "id": 652,
+    "id": 649,
     "spanish": "interés",
     "english": "interest"
   },
   {
-    "id": 653,
+    "id": 650,
     "spanish": "joder",
     "english": "to annoy, bug"
   },
   {
-    "id": 654,
+    "id": 651,
     "spanish": "animal",
     "english": "animal"
   },
   {
-    "id": 655,
+    "id": 652,
     "spanish": "destruir",
     "english": "to destroy"
   },
   {
-    "id": 656,
+    "id": 653,
     "spanish": "sol",
     "english": "sun"
   },
   {
-    "id": 657,
+    "id": 654,
     "spanish": "entregar",
     "english": "to deliver, to hand over"
   },
   {
-    "id": 658,
+    "id": 655,
     "spanish": "color",
     "english": "color / colour, hue"
   },
   {
-    "id": 659,
+    "id": 656,
     "spanish": "caja",
     "english": "box, case"
   },
   {
-    "id": 660,
+    "id": 657,
     "spanish": "cliente",
     "english": "client"
   },
   {
-    "id": 661,
+    "id": 658,
     "spanish": "distinto",
     "english": "distinct"
   },
   {
-    "id": 662,
+    "id": 659,
     "spanish": "víctima",
     "english": "victim"
   },
   {
-    "id": 663,
+    "id": 660,
     "spanish": "deseo",
     "english": "desire, wish"
   },
   {
-    "id": 664,
+    "id": 661,
     "spanish": "arte",
     "english": "art"
   },
   {
-    "id": 665,
+    "id": 662,
     "spanish": "rojo",
     "english": "red"
   },
   {
-    "id": 666,
+    "id": 663,
     "spanish": "acompañar",
     "english": "to accompany, to go with"
   },
   {
-    "id": 667,
+    "id": 664,
     "spanish": "causa",
     "english": "cause"
   },
   {
-    "id": 668,
+    "id": 665,
     "spanish": "cita",
     "english": "date"
   },
   {
-    "id": 669,
+    "id": 666,
     "spanish": "trato",
     "english": "treatment"
   },
   {
-    "id": 670,
+    "id": 667,
     "spanish": "demostrar",
     "english": "to show, to demonstrate"
   },
   {
-    "id": 671,
+    "id": 668,
     "spanish": "aforar",
     "english": "to gauge, measure"
   },
   {
-    "id": 672,
+    "id": 669,
     "spanish": "jamás",
     "english": "never"
   },
   {
-    "id": 673,
+    "id": 670,
     "spanish": "recuperar",
     "english": "to recover"
   },
   {
-    "id": 674,
+    "id": 671,
     "spanish": "merecer",
     "english": "to deserve"
   },
   {
-    "id": 675,
+    "id": 672,
     "spanish": "hotel",
     "english": "hotel"
   },
   {
-    "id": 676,
+    "id": 673,
     "spanish": "estrella",
     "english": "star"
   },
   {
-    "id": 677,
+    "id": 674,
     "spanish": "sexo",
     "english": "sex"
   },
   {
-    "id": 678,
+    "id": 675,
     "spanish": "normal",
     "english": "normal, standard"
   },
   {
-    "id": 679,
+    "id": 676,
     "spanish": "bailar",
     "english": "to dance"
   },
   {
-    "id": 680,
+    "id": 677,
     "spanish": "incluir",
     "english": "to include, to enclose"
   },
   {
-    "id": 681,
+    "id": 678,
     "spanish": "dolor",
     "english": "pain, ache"
   },
   {
-    "id": 682,
+    "id": 679,
     "spanish": "mitad",
     "english": "half"
   },
   {
-    "id": 683,
+    "id": 680,
     "spanish": "gusto",
     "english": "taste"
   },
   {
-    "id": 684,
+    "id": 681,
     "spanish": "canción",
     "english": "song"
   },
   {
-    "id": 685,
+    "id": 682,
     "spanish": "alrededor",
     "english": "around"
   },
   {
-    "id": 686,
+    "id": 683,
     "spanish": "militar",
     "english": "military"
   },
   {
-    "id": 687,
+    "id": 684,
     "spanish": "baño",
     "english": "bath"
   },
   {
-    "id": 688,
+    "id": 685,
     "spanish": "querido",
     "english": "dear"
   },
   {
-    "id": 689,
+    "id": 686,
     "spanish": "objetivo",
     "english": "objective"
   },
   {
-    "id": 690,
+    "id": 687,
     "spanish": "reír",
     "english": "to laugh"
   },
   {
-    "id": 691,
+    "id": 688,
     "spanish": "respecto",
     "english": "respect, regard"
   },
   {
-    "id": 692,
+    "id": 689,
     "spanish": "salud",
     "english": "health"
   },
   {
-    "id": 693,
+    "id": 690,
     "spanish": "completo",
     "english": "full, complete"
   },
   {
-    "id": 694,
+    "id": 691,
     "spanish": "sal",
     "english": "salt"
   },
   {
-    "id": 695,
+    "id": 692,
     "spanish": "mente",
     "english": "mind, intellect"
   },
   {
-    "id": 696,
+    "id": 693,
     "spanish": "suelo",
     "english": "dirt"
   },
   {
-    "id": 697,
+    "id": 694,
     "spanish": "cortar",
     "english": "to cut"
   },
   {
-    "id": 698,
+    "id": 695,
     "spanish": "posición",
     "english": "position"
   },
   {
-    "id": 699,
+    "id": 696,
     "spanish": "medida",
     "english": "measurement"
   },
   {
-    "id": 700,
+    "id": 697,
     "spanish": "especie",
     "english": "species"
   },
   {
-    "id": 701,
+    "id": 698,
     "spanish": "siete",
     "english": "seven"
   },
   {
-    "id": 702,
+    "id": 699,
     "spanish": "diferencia",
     "english": "difference"
   },
   {
-    "id": 703,
+    "id": 700,
     "spanish": "formar",
     "english": "to form, to create"
   },
   {
-    "id": 704,
+    "id": 701,
     "spanish": "precio",
     "english": "price"
   },
   {
-    "id": 705,
+    "id": 702,
     "spanish": "maravilloso",
     "english": "wonderful, marvelous"
   },
   {
-    "id": 706,
+    "id": 703,
     "spanish": "pelo",
     "english": "hair"
   },
   {
-    "id": 707,
+    "id": 704,
     "spanish": "luchar",
     "english": "to fight, to battle"
   },
   {
-    "id": 708,
+    "id": 705,
     "spanish": "opinión",
     "english": "opinion"
   },
   {
-    "id": 709,
+    "id": 706,
     "spanish": "estudiar",
     "english": "to study"
   },
   {
-    "id": 710,
+    "id": 707,
     "spanish": "resolver",
     "english": "to resolve, to sort out"
   },
   {
-    "id": 711,
+    "id": 708,
     "spanish": "mercado",
     "english": "market"
   },
   {
-    "id": 712,
+    "id": 709,
     "spanish": "elección",
     "english": "election"
   },
   {
-    "id": 713,
+    "id": 710,
     "spanish": "interior",
     "english": "interior"
   },
   {
-    "id": 714,
+    "id": 711,
     "spanish": "silencio",
     "english": "silence"
   },
   {
-    "id": 715,
+    "id": 712,
     "spanish": "necesidad",
     "english": "need"
   },
   {
-    "id": 716,
+    "id": 713,
     "spanish": "odio",
     "english": "hate, hatred"
   },
   {
-    "id": 717,
+    "id": 714,
     "spanish": "experiencia",
     "english": "experience"
   },
   {
-    "id": 718,
+    "id": 715,
     "spanish": "actividad",
     "english": "activity"
   },
   {
-    "id": 719,
+    "id": 716,
     "spanish": "guardar",
     "english": "to save"
   },
   {
-    "id": 720,
+    "id": 717,
     "spanish": "droga",
     "english": "drug"
   },
   {
-    "id": 721,
+    "id": 718,
     "spanish": "controlar",
     "english": "to control, to rein in"
   },
   {
-    "id": 722,
+    "id": 719,
     "spanish": "accidente",
     "english": "accident"
   },
   {
-    "id": 723,
+    "id": 720,
     "spanish": "club",
     "english": "club"
   },
   {
-    "id": 724,
+    "id": 721,
     "spanish": "ejército",
     "english": "army"
   },
   {
-    "id": 725,
+    "id": 722,
     "spanish": "mar",
     "english": "sea"
   },
   {
-    "id": 726,
+    "id": 723,
     "spanish": "ataque",
     "english": "attack"
   },
   {
-    "id": 727,
+    "id": 724,
     "spanish": "imposible",
     "english": "impossible"
   },
   {
-    "id": 728,
+    "id": 725,
     "spanish": "contacto",
     "english": "contact"
   },
   {
-    "id": 729,
+    "id": 726,
     "spanish": "privado",
     "english": "private, privy"
   },
   {
-    "id": 730,
+    "id": 727,
     "spanish": "alma",
     "english": "soul"
   },
   {
-    "id": 731,
+    "id": 728,
     "spanish": "común",
     "english": "common, ordinary"
   },
   {
-    "id": 732,
+    "id": 729,
     "spanish": "soldado",
     "english": "soldier"
   },
   {
-    "id": 733,
+    "id": 730,
     "spanish": "llave",
     "english": "key"
   },
   {
-    "id": 734,
+    "id": 731,
     "spanish": "energía",
     "english": "energy"
   },
   {
-    "id": 735,
+    "id": 732,
     "spanish": "barco",
     "english": "boat"
   },
   {
-    "id": 736,
+    "id": 733,
     "spanish": "observar",
     "english": "to observe, to eye"
   },
   {
-    "id": 737,
+    "id": 734,
     "spanish": "juez",
     "english": "judge"
   },
   {
-    "id": 738,
+    "id": 735,
     "spanish": "atacar",
     "english": "to attack, to come at"
   },
   {
-    "id": 739,
+    "id": 736,
     "spanish": "preparado",
     "english": "prepared"
   },
   {
-    "id": 740,
+    "id": 737,
     "spanish": "río",
     "english": "river"
   },
   {
-    "id": 741,
+    "id": 738,
     "spanish": "tienda",
     "english": "tent"
   },
   {
-    "id": 742,
+    "id": 739,
     "spanish": "señalar",
     "english": "to signal"
   },
   {
-    "id": 743,
+    "id": 740,
     "spanish": "negar",
     "english": "to deny"
   },
   {
-    "id": 744,
+    "id": 741,
     "spanish": "avión",
     "english": "aeroplane, airplane"
   },
   {
-    "id": 745,
+    "id": 742,
     "spanish": "dulce",
     "english": "candy, sweet"
   },
   {
-    "id": 746,
+    "id": 743,
     "spanish": "marchar",
     "english": "to go, travel"
   },
   {
-    "id": 747,
+    "id": 744,
     "spanish": "operación",
     "english": "operation"
   },
   {
-    "id": 748,
+    "id": 745,
     "spanish": "encuentro",
     "english": "encounter, meeting"
   },
   {
-    "id": 749,
+    "id": 746,
     "spanish": "fuente",
     "english": "spring, fountain"
   },
   {
-    "id": 750,
+    "id": 747,
     "spanish": "informe",
     "english": "report"
   },
   {
-    "id": 751,
+    "id": 748,
     "spanish": "izquierda",
     "english": "left"
   },
   {
-    "id": 752,
+    "id": 749,
     "spanish": "pierna",
     "english": "leg"
   },
   {
-    "id": 753,
+    "id": 750,
     "spanish": "sala",
     "english": "room"
   },
   {
-    "id": 754,
+    "id": 751,
     "spanish": "nacer",
     "english": "to be born, to sprout"
   },
   {
-    "id": 755,
+    "id": 752,
     "spanish": "apenas",
     "english": "barely, scarcely"
   },
   {
-    "id": 756,
+    "id": 753,
     "spanish": "ocho",
     "english": "eight"
   },
   {
-    "id": 757,
+    "id": 754,
     "spanish": "averiguar",
     "english": "to find out, figure out"
   },
   {
-    "id": 758,
+    "id": 755,
     "spanish": "esconder",
     "english": "to hide"
   },
   {
-    "id": 759,
+    "id": 756,
     "spanish": "señal",
     "english": "sign"
   },
   {
-    "id": 760,
+    "id": 757,
     "spanish": "anterior",
     "english": "anterior, previous"
   },
   {
-    "id": 761,
+    "id": 758,
     "spanish": "costar",
     "english": "to cost"
   },
   {
-    "id": 762,
+    "id": 759,
     "spanish": "muestra",
     "english": "sample, sampling"
   },
   {
-    "id": 763,
+    "id": 760,
     "spanish": "nota",
     "english": "note, memo"
   },
   {
-    "id": 764,
+    "id": 761,
     "spanish": "derecha",
     "english": "right"
   },
   {
-    "id": 765,
+    "id": 762,
     "spanish": "escena",
     "english": "scene"
   },
   {
-    "id": 766,
+    "id": 763,
     "spanish": "soltar",
     "english": "to release"
   },
   {
-    "id": 767,
+    "id": 764,
     "spanish": "interesante",
     "english": "interesting"
   },
   {
-    "id": 768,
+    "id": 765,
     "spanish": "vosotros",
     "english": "you, you guys"
   },
   {
-    "id": 769,
+    "id": 766,
     "spanish": "menor",
-    "english": "comparative of pequeño: smaller"
+    "english": "minor"
   },
   {
-    "id": 770,
+    "id": 767,
     "spanish": "metro",
     "english": "meter"
   },
   {
-    "id": 771,
+    "id": 768,
     "spanish": "entrada",
     "english": "entrance"
   },
   {
-    "id": 772,
+    "id": 769,
     "spanish": "regalo",
     "english": "present, gift"
   },
   {
-    "id": 773,
+    "id": 770,
     "spanish": "edificio",
     "english": "building"
   },
   {
-    "id": 774,
+    "id": 771,
     "spanish": "enfermedad",
     "english": "illness, disease"
   },
   {
-    "id": 775,
+    "id": 772,
     "spanish": "traje",
     "english": "suit"
   },
   {
-    "id": 776,
+    "id": 773,
     "spanish": "gritar",
     "english": "to shout, to scream"
   },
   {
-    "id": 777,
+    "id": 774,
     "spanish": "totalmente",
     "english": "totally"
   },
   {
-    "id": 778,
+    "id": 775,
     "spanish": "contestar",
     "english": "to reply, retort"
   },
   {
-    "id": 779,
+    "id": 776,
     "spanish": "peligroso",
     "english": "perilous, dangerous"
   },
   {
-    "id": 780,
+    "id": 777,
     "spanish": "salvo",
     "english": "safe"
   },
   {
-    "id": 781,
+    "id": 778,
     "spanish": "jurar",
     "english": "to swear"
   },
   {
-    "id": 782,
+    "id": 779,
     "spanish": "agradecer",
     "english": "to thank"
   },
   {
-    "id": 783,
+    "id": 780,
     "spanish": "disculpa",
     "english": "excuse"
   },
   {
-    "id": 784,
+    "id": 781,
     "spanish": "simple",
     "english": "simple"
   },
   {
-    "id": 785,
-    "spanish": "uh",
-    "english": "used to express disappointment or disdain"
-  },
-  {
-    "id": 786,
+    "id": 782,
     "spanish": "debido",
     "english": "owed"
   },
   {
-    "id": 787,
+    "id": 783,
     "spanish": "unir",
     "english": "to unite, join"
   },
   {
-    "id": 788,
+    "id": 784,
     "spanish": "disfrutar",
     "english": "to enjoy"
   },
   {
-    "id": 789,
+    "id": 785,
     "spanish": "internacional",
     "english": "international"
   },
   {
-    "id": 790,
+    "id": 786,
     "spanish": "total",
     "english": "total, complete"
   },
   {
-    "id": 791,
+    "id": 787,
     "spanish": "equivocado",
     "english": "mistaken, wrong"
   },
   {
-    "id": 792,
+    "id": 788,
     "spanish": "casado",
     "english": "married"
   },
   {
-    "id": 793,
+    "id": 789,
     "spanish": "cena",
     "english": "supper, dinner"
   },
   {
-    "id": 794,
+    "id": 790,
     "spanish": "guardia",
     "english": "custodian, warden"
   },
   {
-    "id": 795,
+    "id": 791,
     "spanish": "desarrollo",
     "english": "development"
   },
   {
-    "id": 796,
+    "id": 792,
     "spanish": "apostar",
     "english": "to bet"
   },
   {
-    "id": 797,
+    "id": 793,
     "spanish": "presente",
     "english": "present"
   },
   {
-    "id": 798,
+    "id": 794,
     "spanish": "odiar",
     "english": "to hate, to loathe"
   },
   {
-    "id": 799,
+    "id": 795,
     "spanish": "cuestión",
     "english": "matter, question"
   },
   {
-    "id": 800,
+    "id": 796,
     "spanish": "pelear",
     "english": "to fight"
   },
   {
-    "id": 801,
+    "id": 797,
     "spanish": "acordar",
     "english": "to agree"
   },
   {
-    "id": 802,
+    "id": 798,
     "spanish": "dato",
     "english": "datum"
   },
   {
-    "id": 803,
+    "id": 799,
     "spanish": "motivo",
     "english": "reason, ground"
   },
   {
-    "id": 804,
+    "id": 800,
     "spanish": "enfrentar",
     "english": "to confront, to face"
   },
   {
-    "id": 805,
+    "id": 801,
     "spanish": "crimen",
     "english": "violent crime"
   },
   {
-    "id": 806,
+    "id": 802,
     "spanish": "flor",
     "english": "flower"
   },
   {
-    "id": 807,
+    "id": 803,
     "spanish": "boda",
     "english": "wedding"
   },
   {
-    "id": 808,
+    "id": 804,
     "spanish": "representar",
     "english": "to represent"
   },
   {
-    "id": 809,
+    "id": 805,
     "spanish": "unidad",
     "english": "unit"
   },
   {
-    "id": 810,
+    "id": 806,
     "spanish": "montón",
     "english": "heap, pile"
   },
   {
-    "id": 811,
+    "id": 807,
     "spanish": "éxito",
     "english": "success"
   },
   {
-    "id": 812,
+    "id": 808,
     "spanish": "haz",
     "english": "bundle"
   },
   {
-    "id": 813,
+    "id": 809,
     "spanish": "peligro",
     "english": "peril, danger"
   },
   {
-    "id": 814,
+    "id": 810,
     "spanish": "golpe",
     "english": "hit, blow"
   },
   {
-    "id": 815,
+    "id": 811,
     "spanish": "corto",
     "english": "short"
   },
   {
-    "id": 816,
+    "id": 812,
     "spanish": "construir",
     "english": "to build"
   },
   {
-    "id": 817,
+    "id": 813,
     "spanish": "mencionar",
     "english": "to mention"
   },
   {
-    "id": 818,
+    "id": 814,
     "spanish": "revisar",
     "english": "to revise"
   },
   {
-    "id": 819,
+    "id": 815,
     "spanish": "atrapar",
     "english": "to capture"
   },
   {
-    "id": 820,
+    "id": 816,
     "spanish": "producto",
     "english": "product, commodity"
   },
   {
-    "id": 821,
+    "id": 817,
     "spanish": "manejar",
     "english": "to handle"
   },
   {
-    "id": 822,
+    "id": 818,
     "spanish": "carne",
-    "english": "flesh, the soft part of a body which covers the bones"
+    "english": "meat"
   },
   {
-    "id": 823,
+    "id": 819,
     "spanish": "placer",
     "english": "pleasure"
   },
   {
-    "id": 824,
+    "id": 820,
     "spanish": "ventana",
     "english": "window"
   },
   {
-    "id": 825,
+    "id": 821,
     "spanish": "interesar",
     "english": "to interest"
   },
   {
-    "id": 826,
+    "id": 822,
     "spanish": "despedir",
     "english": "to dismiss"
   },
   {
-    "id": 827,
+    "id": 823,
     "spanish": "alejar",
-    "english": "to remove to a distance, put farther away"
+    "english": "to move away"
   },
   {
-    "id": 828,
+    "id": 824,
     "spanish": "natural",
     "english": "natural"
   },
   {
-    "id": 829,
+    "id": 825,
     "spanish": "oro",
     "english": "gold"
   },
   {
-    "id": 830,
+    "id": 826,
     "spanish": "cometer",
     "english": "to commit"
   },
   {
-    "id": 831,
+    "id": 827,
     "spanish": "huir",
     "english": "to flee, to run away"
   },
   {
-    "id": 832,
+    "id": 828,
     "spanish": "lamento",
     "english": "lament"
   },
   {
-    "id": 833,
+    "id": 829,
     "spanish": "informar",
     "english": "to inform"
   },
   {
-    "id": 834,
+    "id": 830,
     "spanish": "acto",
     "english": "act"
   },
   {
-    "id": 835,
+    "id": 831,
     "spanish": "cárcel",
     "english": "prison"
   },
   {
-    "id": 836,
+    "id": 832,
     "spanish": "hallar",
-    "english": "to find something, deliberately or not"
+    "english": "see"
   },
   {
-    "id": 837,
+    "id": 833,
     "spanish": "radio",
     "english": "radio"
   },
   {
-    "id": 838,
+    "id": 834,
     "spanish": "enemigo",
     "english": "foe"
   },
   {
-    "id": 839,
+    "id": 835,
     "spanish": "profesional",
     "english": "professional"
   },
   {
-    "id": 840,
+    "id": 836,
     "spanish": "local",
     "english": "local"
   },
   {
-    "id": 841,
+    "id": 837,
     "spanish": "hambre",
     "english": "hunger"
   },
   {
-    "id": 842,
+    "id": 838,
     "spanish": "departamento",
     "english": "department"
   },
   {
-    "id": 843,
+    "id": 839,
     "spanish": "piso",
     "english": "floor, ground"
   },
   {
-    "id": 844,
+    "id": 840,
     "spanish": "finalmente",
     "english": "finally, in the end"
   },
   {
-    "id": 845,
+    "id": 841,
     "spanish": "espalda",
     "english": "back"
   },
   {
-    "id": 846,
+    "id": 842,
     "spanish": "vestido",
     "english": "dress"
   },
   {
-    "id": 847,
+    "id": 843,
     "spanish": "completamente",
     "english": "completely"
   },
   {
-    "id": 848,
+    "id": 844,
     "spanish": "terrible",
     "english": "terrible, awful"
   },
   {
-    "id": 849,
+    "id": 845,
     "spanish": "norte",
     "english": "north"
   },
   {
-    "id": 850,
+    "id": 846,
     "spanish": "cerrado",
     "english": "shut, closed"
   },
   {
-    "id": 851,
+    "id": 847,
     "spanish": "aspecto",
     "english": "aspect"
   },
   {
-    "id": 852,
+    "id": 848,
     "spanish": "familiar",
     "english": "familial, family"
   },
   {
-    "id": 853,
+    "id": 849,
     "spanish": "visita",
     "english": "visit"
   },
   {
-    "id": 854,
+    "id": 850,
     "spanish": "adónde",
     "english": "to where, whither"
   },
   {
-    "id": 855,
+    "id": 851,
     "spanish": "contrario",
     "english": "contrary, opposite"
   },
   {
-    "id": 856,
+    "id": 852,
     "spanish": "enterar",
     "english": "to inform"
   },
   {
-    "id": 857,
+    "id": 853,
     "spanish": "broma",
     "english": "joke, prank"
   },
   {
-    "id": 858,
+    "id": 854,
     "spanish": "sorpresa",
     "english": "surprise"
   },
   {
-    "id": 859,
+    "id": 855,
     "spanish": "juicio",
     "english": "good judgement"
   },
   {
-    "id": 860,
+    "id": 856,
     "spanish": "defensa",
     "english": "defense"
   },
   {
-    "id": 861,
+    "id": 857,
     "spanish": "depender",
     "english": "to depend, to be subject to"
   },
   {
-    "id": 862,
+    "id": 858,
     "spanish": "regla",
     "english": "rule"
   },
   {
-    "id": 863,
+    "id": 859,
     "spanish": "comunidad",
     "english": "community"
   },
   {
-    "id": 864,
+    "id": 860,
     "spanish": "intento",
     "english": "attempt"
   },
   {
-    "id": 865,
+    "id": 861,
     "spanish": "cantidad",
     "english": "amount"
   },
   {
-    "id": 866,
+    "id": 862,
     "spanish": "compartir",
     "english": "to share"
   },
   {
-    "id": 867,
+    "id": 863,
     "spanish": "entendido",
     "english": "expert"
   },
   {
-    "id": 868,
+    "id": 864,
     "spanish": "besar",
     "english": "to kiss"
   },
   {
-    "id": 869,
+    "id": 865,
     "spanish": "pertenecer",
     "english": "to belong"
   },
   {
-    "id": 870,
+    "id": 866,
     "spanish": "repetir",
     "english": "to repeat )"
   },
   {
-    "id": 871,
+    "id": 867,
     "spanish": "engañar",
     "english": "to trick, to deceive"
   },
   {
-    "id": 872,
+    "id": 868,
     "spanish": "nave",
     "english": "ship, vessel"
   },
   {
-    "id": 873,
+    "id": 869,
     "spanish": "riesgo",
     "english": "chance"
   },
   {
-    "id": 874,
+    "id": 870,
     "spanish": "justicia",
     "english": "justice"
   },
   {
-    "id": 875,
+    "id": 871,
     "spanish": "central",
     "english": "central"
   },
   {
-    "id": 876,
+    "id": 872,
     "spanish": "cubrir",
     "english": "to cover"
   },
   {
-    "id": 877,
+    "id": 873,
     "spanish": "salida",
     "english": "exit, way out"
   },
   {
-    "id": 878,
+    "id": 874,
     "spanish": "americano",
     "english": "American"
   },
   {
-    "id": 879,
+    "id": 875,
     "spanish": "tren",
     "english": "train"
   },
   {
-    "id": 880,
+    "id": 876,
     "spanish": "serie",
     "english": "series"
   },
   {
-    "id": 881,
+    "id": 877,
     "spanish": "sector",
     "english": "section"
   },
   {
-    "id": 882,
+    "id": 878,
     "spanish": "permanecer",
     "english": "to stay, remain"
   },
   {
-    "id": 883,
+    "id": 879,
     "spanish": "viajar",
     "english": "to travel, journey"
   },
   {
-    "id": 884,
+    "id": 880,
     "spanish": "apartar",
     "english": "to separate, to divide"
   },
   {
-    "id": 885,
+    "id": 881,
     "spanish": "preocupado",
     "english": "worried, concerned"
   },
   {
-    "id": 886,
+    "id": 882,
     "spanish": "asustar",
     "english": "to scare, to frighten"
   },
   {
-    "id": 887,
+    "id": 883,
     "spanish": "desarrollar",
     "english": "to develop"
   },
   {
-    "id": 888,
+    "id": 884,
     "spanish": "uso",
     "english": "use"
   },
   {
-    "id": 889,
+    "id": 885,
     "spanish": "calmar",
     "english": "to calm, to still"
   },
   {
-    "id": 890,
+    "id": 886,
     "spanish": "cabo",
     "english": "end, edge"
   },
   {
-    "id": 891,
+    "id": 887,
     "spanish": "horrible",
     "english": "horrible"
   },
   {
-    "id": 892,
+    "id": 888,
     "spanish": "corte",
     "english": "cut"
   },
   {
-    "id": 893,
+    "id": 889,
     "spanish": "prestar",
     "english": "to lend"
   },
   {
-    "id": 894,
+    "id": 890,
     "spanish": "dedo",
     "english": "finger"
   },
   {
-    "id": 895,
+    "id": 891,
     "spanish": "pegar",
     "english": "to stick"
   },
   {
-    "id": 896,
+    "id": 892,
     "spanish": "discutir",
     "english": "to discuss, to argue"
   },
   {
-    "id": 897,
+    "id": 893,
     "spanish": "esperanza",
     "english": "hope, hopefulness"
   },
   {
-    "id": 898,
+    "id": 894,
     "spanish": "peso",
     "english": "weight"
   },
   {
-    "id": 899,
+    "id": 895,
     "spanish": "opción",
     "english": "option"
   },
   {
-    "id": 900,
+    "id": 896,
     "spanish": "época",
     "english": "epoch, era"
   },
   {
-    "id": 901,
+    "id": 897,
     "spanish": "delante",
     "english": "in front of, before"
   },
   {
-    "id": 902,
+    "id": 898,
     "spanish": "alemán",
     "english": "German"
   },
   {
-    "id": 903,
+    "id": 899,
     "spanish": "rato",
     "english": "a while, bit"
   },
   {
-    "id": 904,
+    "id": 900,
     "spanish": "testigo",
     "english": "witness"
   },
   {
-    "id": 905,
+    "id": 901,
     "spanish": "admitir",
     "english": "to accept, to admit"
   },
   {
-    "id": 906,
+    "id": 902,
     "spanish": "ocasión",
     "english": "occasion"
   },
   {
-    "id": 907,
+    "id": 903,
     "spanish": "área",
     "english": "area"
   },
   {
-    "id": 908,
+    "id": 904,
     "spanish": "detective",
     "english": "detective"
   },
   {
-    "id": 909,
+    "id": 905,
     "spanish": "triste",
     "english": "sad, saddened"
   },
   {
-    "id": 910,
+    "id": 906,
     "spanish": "matrimonio",
     "english": "matrimony"
   },
   {
-    "id": 911,
+    "id": 907,
     "spanish": "superior",
     "english": "upper, higher"
   },
   {
-    "id": 912,
+    "id": 908,
     "spanish": "árbol",
     "english": "tree"
   },
   {
-    "id": 913,
+    "id": 909,
     "spanish": "destino",
     "english": "destiny, fate"
   },
   {
-    "id": 914,
+    "id": 910,
     "spanish": "frío",
     "english": "cold, coldness"
   },
   {
-    "id": 915,
+    "id": 911,
     "spanish": "objeto",
     "english": "object"
   },
   {
-    "id": 916,
+    "id": 912,
     "spanish": "defender",
     "english": "to defend, to protect"
   },
   {
-    "id": 917,
+    "id": 913,
     "spanish": "sentado",
     "english": "seated"
   },
   {
-    "id": 918,
+    "id": 914,
     "spanish": "sur",
     "english": "south"
   },
   {
-    "id": 919,
+    "id": 915,
     "spanish": "cansado",
     "english": "tired, weary"
   },
   {
-    "id": 920,
+    "id": 916,
     "spanish": "azul",
     "english": "blue"
   },
   {
-    "id": 921,
+    "id": 917,
     "spanish": "oscuro",
     "english": "dark"
   },
   {
-    "id": 922,
+    "id": 918,
     "spanish": "superar",
     "english": "to surpass, exceed"
   },
   {
-    "id": 923,
+    "id": 919,
     "spanish": "apoyar",
     "english": "to lean, to rest"
   },
   {
-    "id": 924,
+    "id": 920,
     "spanish": "cine",
     "english": "cinema, moviehouse"
   },
   {
-    "id": 925,
+    "id": 921,
     "spanish": "doler",
-    "english": "to hurt [ +dative]"
+    "english": "to hurt"
   },
   {
-    "id": 926,
+    "id": 922,
     "spanish": "oler",
     "english": "to smell"
   },
   {
-    "id": 927,
+    "id": 923,
     "spanish": "gracioso",
     "english": "funny, amusing"
   },
   {
-    "id": 928,
+    "id": 924,
     "spanish": "bromear",
     "english": "to joke, to kid"
   },
   {
-    "id": 929,
+    "id": 925,
     "spanish": "limpiar",
     "english": "to clean"
   },
   {
-    "id": 930,
+    "id": 926,
     "spanish": "marcha",
     "english": "march"
   },
   {
-    "id": 931,
+    "id": 927,
     "spanish": "misión",
     "english": "mission, quest"
   },
   {
-    "id": 932,
+    "id": 928,
     "spanish": "cocina",
     "english": "kitchen"
   },
   {
-    "id": 933,
+    "id": 929,
     "spanish": "isla",
     "english": "island"
   },
   {
-    "id": 934,
+    "id": 930,
     "spanish": "enfermo",
     "english": "sick person, patient"
   },
   {
-    "id": 935,
+    "id": 931,
     "spanish": "encargar",
     "english": "to entrust"
   },
   {
-    "id": 936,
+    "id": 932,
     "spanish": "responsable",
     "english": "responsible, answerable"
   },
   {
-    "id": 937,
+    "id": 933,
     "spanish": "declarar",
     "english": "to declare"
   },
   {
-    "id": 938,
+    "id": 934,
     "spanish": "sentimiento",
     "english": "feeling"
   },
   {
-    "id": 939,
+    "id": 935,
     "spanish": "colocar",
     "english": "to place"
   },
   {
-    "id": 940,
+    "id": 936,
     "spanish": "visitar",
     "english": "to visit"
   },
   {
-    "id": 941,
+    "id": 937,
     "spanish": "indicar",
     "english": "to indicate, signal"
   },
   {
-    "id": 942,
+    "id": 938,
     "spanish": "físico",
     "english": "physical"
   },
   {
-    "id": 943,
+    "id": 939,
     "spanish": "prensa",
     "english": "press"
   },
   {
-    "id": 944,
+    "id": 940,
     "spanish": "actor",
     "english": "actor"
   },
   {
-    "id": 945,
+    "id": 941,
     "spanish": "amable",
     "english": "kind, amiable"
   },
   {
-    "id": 946,
+    "id": 942,
     "spanish": "actual",
     "english": "present, current"
   },
   {
-    "id": 947,
+    "id": 943,
     "spanish": "francés",
     "english": "French"
   },
   {
-    "id": 948,
+    "id": 944,
     "spanish": "organización",
     "english": "organization"
   },
   {
-    "id": 949,
+    "id": 945,
     "spanish": "causar",
     "english": "to cause, to make"
   },
   {
-    "id": 950,
+    "id": 946,
     "spanish": "afirmar",
     "english": "to state, assert"
   },
   {
-    "id": 951,
+    "id": 947,
     "spanish": "celebrar",
     "english": "to celebrate"
   },
   {
-    "id": 952,
+    "id": 948,
     "spanish": "televisión",
     "english": "television"
   },
   {
-    "id": 953,
+    "id": 949,
     "spanish": "autoridad",
     "english": "authority"
   },
   {
-    "id": 954,
+    "id": 950,
     "spanish": "prisa",
     "english": "hurry, rush"
   },
   {
-    "id": 955,
+    "id": 951,
     "spanish": "nervioso",
     "english": "nerve"
   },
   {
-    "id": 956,
+    "id": 952,
     "spanish": "caliente",
     "english": "hot, warm"
   },
   {
-    "id": 957,
+    "id": 953,
     "spanish": "lucha",
     "english": "fight, fighting"
   },
   {
-    "id": 958,
+    "id": 954,
     "spanish": "entero",
     "english": "whole"
   },
   {
-    "id": 959,
+    "id": 955,
     "spanish": "culo",
     "english": "ass, arse"
   },
   {
-    "id": 960,
+    "id": 956,
     "spanish": "modelo",
     "english": "model"
   },
   {
-    "id": 961,
+    "id": 957,
     "spanish": "mentira",
     "english": "lie, trick"
   },
   {
-    "id": 962,
+    "id": 958,
     "spanish": "divertir",
     "english": "to entertain"
   },
   {
-    "id": 963,
+    "id": 959,
     "spanish": "comprobar",
     "english": "to check, to check on"
   },
   {
-    "id": 964,
+    "id": 960,
     "spanish": "cenar",
     "english": "to dine"
   },
   {
-    "id": 965,
+    "id": 961,
     "spanish": "bolsa",
     "english": "bag"
   },
   {
-    "id": 966,
+    "id": 962,
     "spanish": "honor",
     "english": "honor"
   },
   {
-    "id": 967,
+    "id": 963,
     "spanish": "científico",
     "english": "scientific"
   },
   {
-    "id": 968,
+    "id": 964,
     "spanish": "falso",
     "english": "false"
   },
   {
-    "id": 969,
+    "id": 965,
     "spanish": "luna",
     "english": "moon"
   },
   {
-    "id": 970,
+    "id": 966,
     "spanish": "pareja",
     "english": "couple"
   },
   {
-    "id": 971,
+    "id": 967,
     "spanish": "dispuesto",
     "english": "willing, ready"
   },
   {
-    "id": 972,
+    "id": 968,
     "spanish": "directo",
     "english": "direct, straightforward"
   },
   {
-    "id": 973,
+    "id": 969,
     "spanish": "cerebro",
     "english": "brain"
   },
   {
-    "id": 974,
+    "id": 970,
     "spanish": "especialmente",
     "english": "specially"
   },
   {
-    "id": 975,
+    "id": 971,
     "spanish": "limpio",
     "english": "clean"
   },
   {
-    "id": 976,
+    "id": 972,
     "spanish": "pared",
     "english": "wall, especially of a house or room"
   },
   {
-    "id": 977,
+    "id": 973,
     "spanish": "carajo",
     "english": "cock"
   },
   {
-    "id": 978,
+    "id": 974,
     "spanish": "europeo",
     "english": "European"
   },
   {
-    "id": 979,
+    "id": 975,
     "spanish": "iniciar",
     "english": "to begin"
   },
   {
-    "id": 980,
+    "id": 976,
     "spanish": "diario",
     "english": "diary, journal"
   },
   {
-    "id": 981,
+    "id": 977,
     "spanish": "inteligente",
     "english": "intelligent"
   },
   {
-    "id": 982,
+    "id": 978,
     "spanish": "pista",
     "english": "track, course"
   },
   {
-    "id": 983,
+    "id": 979,
     "spanish": "descansar",
     "english": "to rest, relax"
   },
   {
-    "id": 984,
+    "id": 980,
     "spanish": "grave",
     "english": "serious, grave"
   },
   {
-    "id": 985,
+    "id": 981,
     "spanish": "retirar",
     "english": "to remove"
   },
   {
-    "id": 986,
+    "id": 982,
     "spanish": "arruinar",
     "english": "to ruin"
   },
   {
-    "id": 987,
+    "id": 983,
     "spanish": "banda",
     "english": "band"
   },
   {
-    "id": 988,
+    "id": 984,
     "spanish": "héroe",
     "english": "hero"
   },
   {
-    "id": 989,
+    "id": 985,
     "spanish": "reina",
     "english": "queen"
   },
   {
-    "id": 990,
+    "id": 986,
     "spanish": "bar",
     "english": "bar, coffee shop"
   },
   {
-    "id": 991,
+    "id": 987,
     "spanish": "memoria",
     "english": "memory"
   },
   {
-    "id": 992,
+    "id": 988,
     "spanish": "artículo",
     "english": "article"
   },
   {
-    "id": 993,
+    "id": 989,
     "spanish": "acá",
     "english": "here"
   },
   {
-    "id": 994,
+    "id": 990,
     "spanish": "enorme",
     "english": "enormous, huge"
   },
   {
-    "id": 995,
+    "id": 991,
     "spanish": "investigar",
     "english": "to investigate, to research"
   },
   {
-    "id": 996,
+    "id": 992,
     "spanish": "presencia",
     "english": "presence"
   },
   {
-    "id": 997,
+    "id": 993,
     "spanish": "pretender",
     "english": "to intend, to aim"
   },
   {
-    "id": 998,
+    "id": 994,
     "spanish": "máquina",
     "english": "machine"
   },
   {
-    "id": 999,
+    "id": 995,
     "spanish": "agarrar",
     "english": "to grab or take hold of"
   },
   {
-    "id": 1000,
+    "id": 996,
     "spanish": "permiso",
     "english": "permission"
+  },
+  {
+    "id": 997,
+    "spanish": "función",
+    "english": "function"
+  },
+  {
+    "id": 998,
+    "spanish": "apoyo",
+    "english": "support"
+  },
+  {
+    "id": 999,
+    "spanish": "popular",
+    "english": "popular"
+  },
+  {
+    "id": 1000,
+    "spanish": "estilo",
+    "english": "style"
   }
 ];
