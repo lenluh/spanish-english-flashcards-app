@@ -11,9 +11,12 @@ type LearnerModeProps = {
 
 type Phase = "learn" | "test";
 
+const WORDS_PER_ROUND = 15;
+const TEST_SIZE = 15;
+
 export function LearnerMode({ words, onExit }: LearnerModeProps) {
   const [phase, setPhase] = useState<Phase>("learn");
-  const [learnedCount, setLearnedCount] = useState(20);
+  const [learnedCount, setLearnedCount] = useState(WORDS_PER_ROUND);
   const [testWords, setTestWords] = useState<WordPair[]>([]);
   const [shuffledEnglish, setShuffledEnglish] = useState<WordPair[]>([]);
   const [selectedSpanishId, setSelectedSpanishId] = useState<number | null>(null);
@@ -22,16 +25,15 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
   const [attempts, setAttempts] = useState(0);
   const [correctMatches, setCorrectMatches] = useState(0);
   const [activeStudyIndex, setActiveStudyIndex] = useState(0);
-  const [showEnglish, setShowEnglish] = useState(false);
 
   const sessionWords = useMemo(() => shuffleArray(words), [words]);
   const learnedWords = useMemo(() => sessionWords.slice(0, learnedCount), [sessionWords, learnedCount]);
   const currentBatch = useMemo(() => {
-    const start = Math.max(learnedCount - 20, 0);
+    const start = Math.max(learnedCount - WORDS_PER_ROUND, 0);
     return sessionWords.slice(start, learnedCount);
   }, [learnedCount, sessionWords]);
 
-  const roundNumber = Math.max(1, Math.ceil(learnedCount / 20));
+  const roundNumber = Math.max(1, Math.ceil(learnedCount / WORDS_PER_ROUND));
 
   const evaluateSelection = (spanishId: number, englishId: number) => {
     setAttempts((prev) => prev + 1);
@@ -62,7 +64,7 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
   };
 
   const startTest = () => {
-    const sampled = sampleWords(learnedWords, 10);
+    const sampled = sampleWords(learnedWords, TEST_SIZE);
     setTestWords(sampled);
     setShuffledEnglish(shuffleArray(sampled));
     setMatchedIds([]);
@@ -71,17 +73,20 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
     setSelectedSpanishId(null);
     setSelectedEnglishId(null);
     setActiveStudyIndex(0);
-    setShowEnglish(false);
     setPhase("test");
   };
 
   const continueLearning = () => {
     if (learnedCount < words.length) {
-      setLearnedCount((prev) => Math.min(prev + 20, words.length));
+      setLearnedCount((prev) => Math.min(prev + WORDS_PER_ROUND, words.length));
     }
     setActiveStudyIndex(0);
-    setShowEnglish(false);
     setPhase("learn");
+  };
+
+  const nextStudyWord = () => {
+    if (!currentBatch.length) return;
+    setActiveStudyIndex((prev) => (prev + 1) % currentBatch.length);
   };
 
   const testComplete = matchedIds.length === testWords.length && testWords.length > 0;
@@ -115,9 +120,9 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
             <div className="flex h-full min-h-0 flex-col gap-3">
               <div className="grid gap-3 rounded-sm border border-zinc-900/10 bg-[#ebe2d7] p-4 md:grid-cols-[1.2fr_0.8fr] md:items-center">
                 <div>
-                  <p className="text-[10px] tracking-[0.16em] text-zinc-600 uppercase">Learn 20 new words</p>
+                  <p className="text-[10px] tracking-[0.16em] text-zinc-600 uppercase">Learn {WORDS_PER_ROUND} new words</p>
                   <h2 className="mt-1 font-serif text-2xl text-zinc-900 md:text-3xl">
-                    Study first, then do your 10-word matching test.
+                    Click the big card to move through the words.
                   </h2>
                 </div>
                 <div className="text-zinc-700">
@@ -129,7 +134,7 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
                     onClick={startTest}
                     className="mt-3 rounded-full bg-zinc-900 px-5 py-2 text-[10px] tracking-[0.16em] text-[#f3eee8] uppercase transition hover:bg-zinc-800"
                   >
-                    Start 10-word test
+                    Start {TEST_SIZE}-word test
                   </button>
                 </div>
               </div>
@@ -141,70 +146,34 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
                   </p>
                   <button
                     type="button"
-                    onClick={() => setShowEnglish((prev) => !prev)}
+                    onClick={nextStudyWord}
                     className="mt-2 flex min-h-40 flex-1 flex-col items-center justify-center rounded-sm border border-zinc-900/15 bg-white/70 p-4 text-center transition hover:border-zinc-900/35"
                   >
-                    <span className="text-[10px] tracking-[0.16em] text-zinc-500 uppercase">
-                      {showEnglish ? "English" : "Español"}
-                    </span>
+                    <span className="text-[10px] tracking-[0.16em] text-zinc-500 uppercase">Español</span>
                     <span className="mt-3 font-serif text-4xl text-zinc-900 md:text-5xl">
-                      {showEnglish ? studyWord?.english : studyWord?.spanish}
+                      {studyWord?.spanish}
                     </span>
-                    <span className="mt-2 text-xs text-zinc-600">Tap card to flip</span>
+                    <span className="mt-3 text-[10px] tracking-[0.16em] text-zinc-500 uppercase">English</span>
+                    <span className="mt-1 text-lg text-zinc-700">{studyWord?.english}</span>
+                    <span className="mt-3 text-xs text-zinc-600">Click for next word</span>
                   </button>
-
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setActiveStudyIndex((prev) => (prev === 0 ? currentBatch.length - 1 : prev - 1));
-                        setShowEnglish(false);
-                      }}
-                      className="rounded-full border border-zinc-900/20 px-3 py-1.5 text-[10px] tracking-[0.14em] text-zinc-900 uppercase transition hover:bg-zinc-900 hover:text-[#f3eee8]"
-                    >
-                      Previous
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setActiveStudyIndex((prev) => (prev + 1) % currentBatch.length);
-                        setShowEnglish(false);
-                      }}
-                      className="rounded-full border border-zinc-900/20 px-3 py-1.5 text-[10px] tracking-[0.14em] text-zinc-900 uppercase transition hover:bg-zinc-900 hover:text-[#f3eee8]"
-                    >
-                      Next
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setActiveStudyIndex(Math.floor(Math.random() * currentBatch.length));
-                        setShowEnglish(false);
-                      }}
-                      className="rounded-full border border-zinc-900/20 px-3 py-1.5 text-[10px] tracking-[0.14em] text-zinc-900 uppercase transition hover:bg-zinc-900 hover:text-[#f3eee8]"
-                    >
-                      Random
-                    </button>
-                  </div>
                 </div>
 
-                <div className="grid min-h-0 gap-2 overflow-auto rounded-sm border border-zinc-900/10 bg-[#f7f2eb] p-3 md:grid-cols-2">
+                <div className="grid min-h-0 gap-2 overflow-auto rounded-sm border border-zinc-900/10 bg-[#f7f2eb] p-3 md:grid-cols-3">
                   {currentBatch.map((word, index) => (
                     <button
                       key={word.id}
                       type="button"
-                      onClick={() => {
-                        setActiveStudyIndex(index);
-                        setShowEnglish(false);
-                      }}
+                      onClick={() => setActiveStudyIndex(index)}
                       className={`rounded-sm border p-3 text-left transition ${
                         activeStudyIndex === index
                           ? "border-zinc-900 bg-zinc-900 text-[#f3eee8]"
                           : "border-zinc-900/10 bg-white/70 text-zinc-900 hover:border-zinc-900/35"
                       }`}
                     >
-                      <p className="font-serif text-xl leading-tight">{word.spanish}</p>
+                      <p className="font-serif text-lg leading-tight">{word.spanish}</p>
                       <p
-                        className={`mt-1 text-xs ${
+                        className={`mt-1 text-[11px] ${
                           activeStudyIndex === index ? "text-stone-300" : "text-zinc-600"
                         }`}
                       >
@@ -286,7 +255,7 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
                     </h3>
                     <p className="mt-2 text-sm text-stone-300">
                       {learnedCount < words.length
-                        ? `Ready for the next 20 words. Your next test will sample 10 random words out of ${Math.min(learnedCount + 20, words.length)}.`
+                        ? `Ready for the next ${WORDS_PER_ROUND} words. Your next test will sample ${TEST_SIZE} random words out of ${Math.min(learnedCount + WORDS_PER_ROUND, words.length)}.`
                         : "You have reached all 1000 words. You can keep testing for retention anytime."}
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2">
@@ -296,7 +265,7 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
                           onClick={continueLearning}
                           className="rounded-full bg-stone-100 px-5 py-2 text-[10px] tracking-[0.16em] text-zinc-900 uppercase transition hover:bg-white"
                         >
-                          Learn next 20 words
+                          Learn next {WORDS_PER_ROUND} words
                         </button>
                       ) : null}
                       <button
