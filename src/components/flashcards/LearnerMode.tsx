@@ -12,7 +12,7 @@ type LearnerModeProps = {
 type Phase = "learn" | "test";
 
 const WORDS_PER_ROUND = 15;
-const TEST_SIZE = 15;
+const TEST_SIZE = 10;
 
 export function LearnerMode({ words, onExit }: LearnerModeProps) {
   const [phase, setPhase] = useState<Phase>("learn");
@@ -25,6 +25,7 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
   const [attempts, setAttempts] = useState(0);
   const [correctMatches, setCorrectMatches] = useState(0);
   const [activeStudyIndex, setActiveStudyIndex] = useState(0);
+  const [showEnglish, setShowEnglish] = useState(false);
 
   const sessionWords = useMemo(() => shuffleArray(words), [words]);
   const learnedWords = useMemo(() => sessionWords.slice(0, learnedCount), [sessionWords, learnedCount]);
@@ -73,6 +74,7 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
     setSelectedSpanishId(null);
     setSelectedEnglishId(null);
     setActiveStudyIndex(0);
+    setShowEnglish(false);
     setPhase("test");
   };
 
@@ -81,11 +83,19 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
       setLearnedCount((prev) => Math.min(prev + WORDS_PER_ROUND, words.length));
     }
     setActiveStudyIndex(0);
+    setShowEnglish(false);
     setPhase("learn");
   };
 
-  const nextStudyWord = () => {
+  const advanceStudyCard = () => {
     if (!currentBatch.length) return;
+
+    if (!showEnglish) {
+      setShowEnglish(true);
+      return;
+    }
+
+    setShowEnglish(false);
     setActiveStudyIndex((prev) => (prev + 1) % currentBatch.length);
   };
 
@@ -122,7 +132,7 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
                 <div>
                   <p className="text-[10px] tracking-[0.16em] text-zinc-600 uppercase">Learn {WORDS_PER_ROUND} new words</p>
                   <h2 className="mt-1 font-serif text-2xl text-zinc-900 md:text-3xl">
-                    Click the big card to move through the words.
+                    Click sequence: Spanish → English → next Spanish.
                   </h2>
                 </div>
                 <div className="text-zinc-700">
@@ -146,16 +156,18 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
                   </p>
                   <button
                     type="button"
-                    onClick={nextStudyWord}
+                    onClick={advanceStudyCard}
                     className="mt-2 flex min-h-40 flex-1 flex-col items-center justify-center rounded-sm border border-zinc-900/15 bg-white/70 p-4 text-center transition hover:border-zinc-900/35"
                   >
-                    <span className="text-[10px] tracking-[0.16em] text-zinc-500 uppercase">Español</span>
-                    <span className="mt-3 font-serif text-4xl text-zinc-900 md:text-5xl">
-                      {studyWord?.spanish}
+                    <span className="text-[10px] tracking-[0.16em] text-zinc-500 uppercase">
+                      {showEnglish ? "English" : "Español"}
                     </span>
-                    <span className="mt-3 text-[10px] tracking-[0.16em] text-zinc-500 uppercase">English</span>
-                    <span className="mt-1 text-lg text-zinc-700">{studyWord?.english}</span>
-                    <span className="mt-3 text-xs text-zinc-600">Click for next word</span>
+                    <span className="mt-3 font-serif text-4xl text-zinc-900 md:text-5xl">
+                      {showEnglish ? studyWord?.english : studyWord?.spanish}
+                    </span>
+                    <span className="mt-3 text-xs text-zinc-600">
+                      {showEnglish ? "Click for next Spanish word" : "Click to reveal English translation"}
+                    </span>
                   </button>
                 </div>
 
@@ -164,7 +176,10 @@ export function LearnerMode({ words, onExit }: LearnerModeProps) {
                     <button
                       key={word.id}
                       type="button"
-                      onClick={() => setActiveStudyIndex(index)}
+                      onClick={() => {
+                        setActiveStudyIndex(index);
+                        setShowEnglish(false);
+                      }}
                       className={`rounded-sm border p-3 text-left transition ${
                         activeStudyIndex === index
                           ? "border-zinc-900 bg-zinc-900 text-[#f3eee8]"
